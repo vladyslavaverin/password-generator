@@ -2,7 +2,8 @@ const mainEl = document.querySelector('.main')
 const passwordEl = document.createElement('input')
 passwordEl.classList.add('password')
 passwordEl.setAttribute('placeholder', '')
-passwordEl.setAttribute('onpaste', 'return false') // Запрет на вставку через Ctrl+V/Shift+Ins
+passwordEl.setAttribute('onpaste', 'return false')
+passwordEl.setAttribute('readonly', 'readonly')
 passwordEl.addEventListener('keypress', (e) => {
     e.preventDefault()
 })
